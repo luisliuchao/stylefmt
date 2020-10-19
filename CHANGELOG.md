@@ -1,3 +1,7 @@
+## v6.0.5
+
+- Update dependencies
+
 ## v6.0.3
 
 - Replace turbocolor with colorette #338
