@@ -1,3 +1,7 @@
+## v6.0.6
+
+- Temporary workaround for maps are forcely inlined.
+
 ## v6.0.5
 
 - Update dependencies
