@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/ronilaukkarinen/stylefmt">
-    <img width=360px src="http://ronilaukkarinen.github.io/stylefmt-logo.svg">
+    <img width=360px src="http://www.dude.fi/stylefmt.svg">
   </a>
 </div>
 <br>
