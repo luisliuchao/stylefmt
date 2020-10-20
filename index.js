@@ -7,22 +7,27 @@ const formatRules = require('./lib/formatRules')
 const formatComments = require('./lib/formatComments')
 const formatSassVariables = require('./lib/formatSassVariables')
 
-const stylefmt = postcss.plugin('stylefmt', function (options) {
+module.exports = function (options) {
   var paramer = params(options)
-  return function (root, result) {
-    return paramer(root, result).then(function (params) {
-      if(params) {
-        formatComments(root, params)
-        formatAtRules(root, params)
-        formatRules(root, params)
-        formatSassVariables(root, params)
-        // order should be the last to prevent empty line collapse in order rules
-        formatOrder(root, params)
-      }
-    }).catch(function (err) {
-      console.error(err.stack)
-    })
-  }
-})
+  return {
+    postcssPlugin: 'stylefmt',
+    Once: function Once (root, _ref) {
+      var result = _ref.result
 
-module.exports = stylefmt
+      return paramer(root, result).then(function (params) {
+        if(params) {
+          formatComments(root, params)
+          formatAtRules(root, params)
+          formatRules(root, params)
+          formatSassVariables(root, params)
+          // order should be the last to prevent empty line collapse in order rules
+          formatOrder(root, params)
+        }
+      }).catch(function (err) {
+        console.error(err.stack)
+      })
+    }
+  }
+}
+
+module.exports.postcss = true

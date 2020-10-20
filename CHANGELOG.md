@@ -1,3 +1,7 @@
+## 6.1.2
+
+- Migrate unit tests to postCSS 8, fix build
+
 ## v6.0.7
 
 - Temporary workaround for maps are forcely inlined.
