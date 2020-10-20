@@ -264,7 +264,7 @@ Yield:
 ## Installation
 
 ```shell
-$ npm install stylefmt
+$ npm install @ronilaukkarinen/stylefmt
 ```
 
 ## Usage
