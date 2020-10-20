@@ -18,7 +18,7 @@
   </a>
 
   <a href="https://www.npmjs.com/package/@ronilaukkarinen/stylefmt">
-    <img src="https://img.shields.io/npm/v/stylefmt.svg?style=flat-square"
+    <img src="https://img.shields.io/npm/v/@ronilaukkarinen/stylefmt.svg?style=flat-square"
          alt="NPM Version">
   </a>
 
