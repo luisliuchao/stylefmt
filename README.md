@@ -1,8 +1,8 @@
 > Modern CSS Formatter
 
 <div align="center">
-  <a href="https://github.com/morishitter/stylefmt">
-    <img width=360px src="http://morishitter.github.io/stylefmt-logo.svg">
+  <a href="https://github.com/ronilaukkarinen/stylefmt">
+    <img width=360px src="http://ronilaukkarinen.github.io/stylefmt-logo.svg">
   </a>
 </div>
 <br>
@@ -12,34 +12,29 @@
 </big></p>
 
 <p align="center">
-  <a href="https://travis-ci.org/morishitter/stylefmt">
-    <img src="https://travis-ci.org/morishitter/stylefmt.svg"
+  <a href="https://travis-ci.org/ronilaukkarinen/stylefmt">
+    <img src="https://travis-ci.org/ronilaukkarinen/stylefmt.svg"
          alt="Build Status">
   </a>
 
-  <a href="https://www.npmjs.com/package/stylefmt">
+  <a href="https://www.npmjs.com/package/@ronilaukkarinen/stylefmt">
     <img src="https://img.shields.io/npm/v/stylefmt.svg?style=flat-square"
          alt="NPM Version">
   </a>
 
-  <a href="https://www.npmjs.org/package/stylefmt">
+  <a href="https://www.npmjs.org/package/@ronilaukkarinen/stylefmt">
     <img src="https://img.shields.io/npm/dm/stylefmt.svg?style=flat-square"
          alt="Downloads">
   </a>
 
-  <a href="https://david-dm.org/morishitter/stylefmt">
-    <img src="https://david-dm.org/morishitter/stylefmt.svg"
+  <a href="https://david-dm.org/ronilaukkarinen/stylefmt">
+    <img src="https://david-dm.org/ronilaukkarinen/stylefmt.svg"
          alt="Dependency Status">
   </a>
 
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square"
          alt="License">
-  </a>
-
-  <a href="https://gitter.im/morishitter/stylefmt">
-    <img src="https://badges.gitter.im/Join%20Chat.svg"
-         alt="Gitter">
   </a>
 </p>
 <br>
@@ -326,7 +321,7 @@ postcss([
 
 ### in Task Runners
 
-We can use stylefmt in [Grunt](https://github.com/morishitter/grunt-stylefmt), [gulp](https://github.com/morishitter/gulp-stylefmt), and [Fly](https://github.com/morishitter/fly-cssfmt).
+We can use stylefmt in [Grunt](https://github.com/ronilaukkarinen/grunt-stylefmt), [gulp](https://github.com/ronilaukkarinen/gulp-stylefmt), and [Fly](https://github.com/ronilaukkarinen/fly-cssfmt).
 
 
 ## stylelint rules that stylefmt can handle
@@ -407,9 +402,9 @@ and we can also format from the other stylelint's configration files or packages
 
 ### for Task Runners
 
-- [gulp-stylefmt](https://github.com/morishitter/gulp-stylefmt)
-- [grunt-stylefmt](https://github.com/morishitter/grunt-stylefmt)
-- [fly-stylefmt](https://github.com/morishitter/fly-cssfmt)
+- [gulp-stylefmt](https://github.com/ronilaukkarinen/gulp-stylefmt)
+- [grunt-stylefmt](https://github.com/ronilaukkarinen/grunt-stylefmt)
+- [fly-stylefmt](https://github.com/ronilaukkarinen/fly-cssfmt)
 - [laravel-elixir-stylefmt](https://github.com/appleboy/laravel-elixir-cssfmt) by [@appleboy](https://github.com/appleboy)
 - [stylefmt-loader](https://github.com/tomasAlabes/stylefmt-loader) by [@tomasAlabes](https://github.com/tomasAlabes)
 
