@@ -1,4 +1,4 @@
-## v6.0.6
+## v6.0.7
 
 - Temporary workaround for maps are forcely inlined.
 
