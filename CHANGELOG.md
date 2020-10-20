@@ -1,3 +1,7 @@
+## 6.1.3
+
+- Fix eslint errors, fix build
+
 ## 6.1.2
 
 - Migrate unit tests to postCSS 8, fix build

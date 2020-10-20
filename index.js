@@ -1,5 +1,3 @@
-const postcss = require('postcss')
-
 const params = require('./lib/params')
 const formatAtRules = require('./lib/formatAtRules')
 const formatOrder = require('./lib/formatOrder')
