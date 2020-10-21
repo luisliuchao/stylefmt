@@ -1,3 +1,7 @@
+## 6.1.4
+
+- Fix incorrect Quotation in SCSS @functions
+
 ## 6.1.3
 
 - Fix eslint errors, fix build
