@@ -1,4 +1,4 @@
-## 6.1.4
+## 6.1.5
 
 - Fix incorrect Quotation in SCSS @functions
 
