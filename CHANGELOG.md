@@ -1,3 +1,7 @@
+## v6.1.7
+
+Revert and disable only if else atrule formatting
+
 ## v6.1.6
 
 - Disable outdated formatAtRules
