@@ -1,12 +1,16 @@
-## 6.1.5
+## v6.1.6
+
+- Disable outdated formatAtRules
+
+## v6.1.5
 
 - Fix incorrect Quotation in SCSS @functions
 
-## 6.1.3
+## v6.1.3
 
 - Fix eslint errors, fix build
 
-## 6.1.2
+## v6.1.2
 
 - Migrate unit tests to postCSS 8, fix build
 
