@@ -26,6 +26,14 @@ div {
 @include mixin();
 @mixin mix( ) { color:blue}
 @include mixin();
-@if true { color: red} @else {color:blue}
+
+@if true {
+  color: red;
+}
+
+@else {
+  color: blue;
+}
+
 @include mixin();
 @include apply-to-ie6-only {#logo {background-image: url(/logo.gif);}}

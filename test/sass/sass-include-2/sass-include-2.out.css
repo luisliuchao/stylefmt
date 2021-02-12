@@ -39,7 +39,9 @@ div {
 
 @if true {
   color: red;
-} @else {
+}
+
+@else {
   color: blue;
 }
 
