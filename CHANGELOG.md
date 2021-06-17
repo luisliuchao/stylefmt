@@ -1,3 +1,8 @@
+## v6.1.9
+
+* Fix: At-rules should always be bottom
+* Fix: Honor alphabetical order from stylelint-order plugin
+
 ## v6.1.8
 
 * Fix TypeError: sort is not a function	at formatOrder stylefmt/lib/formatOrder.js:14:3
