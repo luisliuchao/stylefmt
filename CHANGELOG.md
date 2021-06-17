@@ -1,3 +1,7 @@
+## v6.2.0
+
+* Force alphabetical sorting by default
+
 ## v6.1.9
 
 * Fix: At-rules should always be bottom
