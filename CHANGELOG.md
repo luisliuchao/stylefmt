@@ -1,3 +1,8 @@
+## v6.2.1
+
+* Fix: Media queries should be last by default
+* Fix: @include should be first by default
+
 ## v6.2.0
 
 * Force alphabetical sorting by default
