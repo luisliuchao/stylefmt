@@ -27,11 +27,6 @@
          alt="Downloads">
   </a>
 
-  <a href="https://david-dm.org/ronilaukkarinen/stylefmt">
-    <img src="https://david-dm.org/ronilaukkarinen/stylefmt.svg"
-         alt="Dependency Status">
-  </a>
-
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/license-MIT-444444.svg?style=flat-square"
          alt="License">
