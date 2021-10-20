@@ -12,8 +12,8 @@
 </big></p>
 
 <p align="center">
-  <a href="https://travis-ci.com/ronilaukkarinen/stylefmt">
-    <img src="https://travis-ci.com/ronilaukkarinen/stylefmt.svg"
+  <a href="https://travis-ci.org/ronilaukkarinen/stylefmt">
+    <img src="https://travis-ci.org/ronilaukkarinen/stylefmt.svg"
          alt="Build Status">
   </a>
 
