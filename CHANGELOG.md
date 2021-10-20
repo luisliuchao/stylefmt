@@ -1,3 +1,7 @@
+## v6.2.2
+
+* Fix: Extension ruins ASCII art definitions for grid-template-areas [#1](https://github.com/ronilaukkarinen/vscode-stylefmt/issues/1)
+
 ## v6.2.1
 
 * Fix: Media queries should be last by default
