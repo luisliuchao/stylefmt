@@ -36,6 +36,16 @@
 
 stylefmt is a tool that automatically formats CSS according to [stylelint](http://stylelint.io/) rules.
 
+**Please note!** This is a fork of [already abandoned stylefmt](https://github.com/morishitter/stylefmt) repo. This fork does not coutain outdated stylelint rules and has all at-rules disabled! Most of the rules are not maintained any more in favor of [stylelint](https://github.com/stylelint/stylelint). This fork exists only to have a working npm package for [vscode-stylefmt](https://github.com/ronilaukkarinen/vscode-stylefmt).
+
+To use:
+
+```bash
+npm install @ronilaukkarinen/stylefmt --save-dev
+```
+
+---
+
 stylefmt'd code is:
 
 - easier to **write** : never worry about minor formatting concerns while hacking away.
