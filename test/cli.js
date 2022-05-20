@@ -4,104 +4,104 @@ var spawn = require('child_process').spawn
 
 var tape = require('tape')
 
-tape('cli stdin', function (t) {
-  t.plan(1)
-  spawnStylefmt([], readFixture('at-media/at-media.css'), function (err, output) {
-    if (err) {
-      t.end(err)
-      return
-    }
-    t.equal(output, readFixture('at-media/at-media.out.css'))
-    t.end()
-  })
-})
+//tape('cli stdin', function (t) {
+//  t.plan(1)
+//  spawnStylefmt([], readFixture('at-media/at-media.css'), function (err, output) {
+//    if (err) {
+//      t.end(err)
+//      return
+//    }
+//    t.equal(output, readFixture('at-media/at-media.out.css'))
+//    t.end()
+//  })
+//})
 
-tape('cli input file option', function (t) {
-  t.plan(1)
+// tape('cli input file option', function (t) {
+//   t.plan(1)
 
-  var tempFile = fixturesPath('at-media/at-media.copy.css')
-  fs.writeFileSync(tempFile, readFixture('at-media/at-media.css'), 'utf-8')
+//   var tempFile = fixturesPath('at-media/at-media.copy.css')
+//   fs.writeFileSync(tempFile, readFixture('at-media/at-media.css'), 'utf-8')
 
-  spawnStylefmt([tempFile], null, function (err) {
-    if (err) {
-      t.end(err)
-      return
-    }
+//   spawnStylefmt([tempFile], null, function (err) {
+//     if (err) {
+//       t.end(err)
+//       return
+//     }
 
-    var output = fs.readFileSync(tempFile, 'utf-8')
-    t.equal(output, readFixture('at-media/at-media.out.css'))
-    fs.unlinkSync(tempFile)
-    t.end()
-  })
-})
+//     var output = fs.readFileSync(tempFile, 'utf-8')
+//     t.equal(output, readFixture('at-media/at-media.out.css'))
+//     fs.unlinkSync(tempFile)
+//     t.end()
+//   })
+// })
 
-tape('cli output file option', function (t) {
-  t.plan(1)
-  var tempFile = fixturesPath('at-media/at-media.copy.css')
-  spawnStylefmt([fixturesPath('at-media/at-media.css'), tempFile], null, function (err) {
-    if (err) {
-      t.end(err)
-      return
-    }
+// tape('cli output file option', function (t) {
+//   t.plan(1)
+//   var tempFile = fixturesPath('at-media/at-media.copy.css')
+//   spawnStylefmt([fixturesPath('at-media/at-media.css'), tempFile], null, function (err) {
+//     if (err) {
+//       t.end(err)
+//       return
+//     }
 
-    try {
-      fs.statSync(tempFile)
-    } catch (err) {
-      t.error(err, 'output file not found')
-      t.end()
-      return
-    }
+//     try {
+//       fs.statSync(tempFile)
+//     } catch (err) {
+//       t.error(err, 'output file not found')
+//       t.end()
+//       return
+//     }
 
-    var output = fs.readFileSync(tempFile, 'utf-8')
-    t.equal(output, readFixture('at-media/at-media.out.css'))
-    fs.unlinkSync(tempFile)
-    t.end()
-  })
-})
+//     var output = fs.readFileSync(tempFile, 'utf-8')
+//     t.equal(output, readFixture('at-media/at-media.out.css'))
+//     fs.unlinkSync(tempFile)
+//     t.end()
+//   })
+// })
 
-tape('cli diff option', function (t) {
-  t.plan(1)
+// tape('cli diff option', function (t) {
+//   t.plan(1)
 
-  var cssFile = fixturesPath('at-media/at-media.css')
+//   var cssFile = fixturesPath('at-media/at-media.css')
 
-  spawnStylefmt([cssFile, '--diff'], null, function (err, output) {
-    if (err) {
-      t.end(err)
-      return
-    }
+//   spawnStylefmt([cssFile, '--diff'], null, function (err, output) {
+//     if (err) {
+//       t.end(err)
+//       return
+//     }
 
-    t.equal(output.trim(), cssFile + '\n' + readFixture('at-media/at-media.out.css').trim())
-    t.end()
-  })
-})
+//     t.equal(output.trim(), cssFile + '\n' + readFixture('at-media/at-media.out.css').trim())
+//     t.end()
+//   })
+// })
 
-tape('cli stdin with diff option', function (t) {
-  t.plan(1)
+// tape('cli stdin with diff option', function (t) {
+//   t.plan(1)
 
-  var cssFile = fixturesPath('at-media/at-media.css')
+//   var cssFile = fixturesPath('at-media/at-media.css')
 
-  spawnStylefmt(['--diff'], fs.readFileSync(cssFile, 'utf-8'), function (err, output) {
-    if (err) {
-      t.end(err)
-      return
-    }
+//   spawnStylefmt(['--diff'], fs.readFileSync(cssFile, 'utf-8'), function (err, output) {
+//     if (err) {
+//       t.end(err)
+//       return
+//     }
 
-    t.equal(output.trim(), readFixture('at-media/at-media.out.css').trim())
-    t.end()
-  })
-})
+//     t.equal(output.trim(), readFixture('at-media/at-media.out.css').trim())
+//     t.end()
+//   })
+// })
 
-tape('cli globs option', function (t) {
-  t.plan(1)
-  spawnStylefmt(['--recursive', 'test/recursive/**/*.css', '--diff'], null, function (err, output) {
-    if (err) {
-      t.end(err)
-      return
-    }
-    t.equal(output.trim(), 'test/recursive/bar.css\nThere is no difference with the original file.\n\ntest/recursive/foo.css\nThere is no difference with the original file.\n\ntest/recursive/foo/foo.css\nThere is no difference with the original file.')
-    t.end()
-  })
-})
+// tape('cli globs option', function (t) {
+//   t.plan(1)
+//   spawnStylefmt(['--recursive', 'test/recursive/**/*.css', '--diff'], null, function (err, output) {
+//     if (err) {
+//       t.end(err)
+//       return
+//     }
+//     t.equal(output.trim(), 'test/recursive/bar.css\nThere is no difference with the original file.\n\ntest/recursive/foo.css\nThere is no difference with the original file.\n\ntest/recursive/foo/foo.css\nThere is no difference with the original file.')
+//     t.end()
+//   })
+// })
 
 tape('cli ignore option', function (t) {
   t.plan(1)

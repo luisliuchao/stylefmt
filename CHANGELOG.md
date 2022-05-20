@@ -1,3 +1,8 @@
+## v6.2.3
+
+* Disable formatAtRules
+* Ignore all atRules in tests
+
 ## v6.2.2
 
 * Fix: Extension ruins ASCII art definitions for grid-template-areas [#1](https://github.com/ronilaukkarinen/vscode-stylefmt/issues/1)
