@@ -1,3 +1,8 @@
+## v6.2.4
+
+* Ignore @if and @else
+* Restore formatting other at-rules
+
 ## v6.2.3
 
 * Disable formatAtRules
